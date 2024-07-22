@@ -4,7 +4,7 @@ function App() {
 
 
   return (
-    <div className="h-svh">
+    <div className="h-svh flex flex-col gap-4">
       <Header />
       <AboutMain />
     </div>
