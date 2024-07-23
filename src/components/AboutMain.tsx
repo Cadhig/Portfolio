@@ -5,7 +5,7 @@ export default function AboutMain() {
 
     return (
         <div className='flex m-4 items-center defaultFont'>
-            <div className='flex flex-col gap-4 w-full'>
+            <div className='flex flex-col gap-6 w-full'>
                 <div className='flex justify-around items-center w-full md:justify-between'>
                     <div className='flex flex-col md:flex-row justify-around items-center w-full md:justify-center md:gap-6'>
                         <div className='flex flex-col md:w-1/4 gap-4'>
@@ -18,7 +18,7 @@ export default function AboutMain() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col gap-4 items-center'>
+                <div className='flex flex-col gap-6 items-center'>
                     <div className='flex gap-6'>
                         <a href="https://www.linkedin.com/in/cadence-higgins-2b3769314/" target="_blank"><Linkedin size={28} className='transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer' /></a>
                         <a href="https://www.instagram.com/cosmiqz/" target="_blank"><Instagram size={28} className='transition duration-150 ease-in-out hover:-translate-y-1 cursor-pointer' /></a>

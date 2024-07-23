@@ -3,11 +3,16 @@ import HandWave from '../assets/HandWave.png'
 export default function Header() {
 
     return (
-        <div className='flex items-center justify-between m-4 font-bold hover:underline text-lg lg:justify-around'>
+        <div className='flex items-center justify-between m-4 font-bold text-lg lg:justify-around'>
             <img src={HandWave} alt="waving hand emoji" className='size-9 object-contain' />
-            <p>About Me</p>
-            <p>Contact</p>
-            <p>Projects</p>
+            <div className='flex items-center gap-4 md:text-xl'>
+                <p className='hover:underline cursor-pointer flex-shrink-0'>About Me</p>
+                <p className='hover:underline cursor-pointer'>Contact</p>
+                <div className='relative flex flex-col w-full md:w-32'>
+                    <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
+                    <p className='cursor-pointer relative bg-green-custom text-grey-custom p-1 flex items-center justify-center gap-2 rounded border-2 border-grey-custom transition duration-150 ease-in-out hover:-translate-y-1'>Projects</p>
+                </div>
+            </div>
         </div>
     )
 }
