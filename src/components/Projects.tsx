@@ -17,7 +17,7 @@ export default function Projects(props: Project) {
             </div>
             <div className='relative defaultFont z-0' onClick={() => setModal(true)}>
                 <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
-                <div className=" flex flex-col p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
+                <div className=" flex flex-col gap-1 p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
                     <img src={props.img} alt={props.title} className="border border-grey-custom rounded h-52 w-full object-cover" />
                     <h1>{props.title}</h1>
                 </div>
