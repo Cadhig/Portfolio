@@ -25,18 +25,17 @@ export default function Projects(props: Project) {
 }
 
 function ProjectModal(props: ModalProps) {
-    function handleClick() {
-        console.log('X clicked');  // Debug log
-        props.setModal(false);
-        console.log(props.modal)
-    };
 
     return (
         <div className="fixed left-0 top-0 size-full overflow-auto bg-grey-custom/20 flex items-center justify-center">
             <div className="bg-green-custom sticky rounded flex flex-col  items-center size-3/4 border border-grey-custom shadow-lg text-grey-custom defaultFont">
                 <div className="flex items-center">
                     <h1 className="text-4xl font-bold">{props.title}</h1>
-                    <X onClick={handleClick} />
+                    <X onClick={() => {
+                        console.log('X clicked');
+                        props.setModal(!props.modal);
+                        console.log(props.modal)
+                    }} />
                 </div>
                 <div className="flex size-full">
                     <div className="flex items-center w-1/2 mx-4 justify-center">

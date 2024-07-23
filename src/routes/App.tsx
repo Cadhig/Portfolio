@@ -2,6 +2,7 @@ import Header from "../components/Header"
 import AboutMain from "../components/AboutMain"
 import TechStack from "../components/TechStack"
 import ProjectsMain from "../components/ProjectsMain"
+import Contact from "../components/Contact"
 function App() {
 
 
@@ -11,6 +12,7 @@ function App() {
       <AboutMain />
       <TechStack />
       <ProjectsMain />
+      <Contact />
     </div>
   )
 }
