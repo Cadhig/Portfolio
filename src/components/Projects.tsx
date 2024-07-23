@@ -11,6 +11,7 @@ export default function Projects(props: Project) {
     let showOrHideModal = modal ? 'inline' : 'hidden'
 
     return (
+
         <div className='relative defaultFont' onClick={() => setModal(true)}>
             <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
             <div className="flex flex-col p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
@@ -21,6 +22,7 @@ export default function Projects(props: Project) {
                 <ProjectModal {...props} setModal={setModal} modal={modal} />
             </div>
         </div>
+
     )
 }
 
@@ -31,10 +33,9 @@ function ProjectModal(props: ModalProps) {
             <div className="bg-green-custom sticky rounded flex flex-col  items-center size-3/4 border border-grey-custom shadow-lg text-grey-custom defaultFont">
                 <div className="flex items-center">
                     <h1 className="text-4xl font-bold">{props.title}</h1>
-                    <X onClick={() => {
-                        console.log('X clicked');
-                        props.setModal(!props.modal);
-                        console.log(props.modal)
+                    <X onClick={(e) => {
+                        e.stopPropagation();
+                        props.setModal(false);
                     }} />
                 </div>
                 <div className="flex size-full">
