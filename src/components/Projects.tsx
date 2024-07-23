@@ -14,7 +14,7 @@ export default function Projects(props: Project) {
         <div className='relative' onClick={() => setModal(true)}>
             <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
             <div className="flex flex-col p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
-                <img src={props.img} alt="" className="border border-grey-custom rounded h-52 w-full object-cover" />
+                <img src={props.img} alt={props.title} className="border border-grey-custom rounded h-52 w-full object-cover" />
                 <h1>{props.title}</h1>
             </div>
             <div className={showOrHideModal}>
@@ -75,7 +75,7 @@ function ProjectModal(props: ModalProps) {
                         <div className="flex gap-4 w-full">
                             <div className='relative flex flex-col w-full md:w-1/2'>
                                 <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
-                                <a href={props.git} target="_blank" className="relative bg-blue-custom border border-grey-custom rounded flex gap-4 p-2 justify-center items-center text-xl transition duration-150 ease-in-out hover:-translate-y-1"><Github />View Repo</a>
+                                <a href={props.git} target="_blank" className="relative bg-blue-custom rounded flex p-2 items-center gap-4 border border-grey-custom text-xl transition duration-150 ease-in-out hover:-translate-y-1"><Github />View Repo</a>
                             </div>
                             <div className='relative flex flex-col w-full md:w-1/2'>
                                 <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>

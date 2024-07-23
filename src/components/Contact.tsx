@@ -27,7 +27,7 @@ export default function Contact() {
     console.log(isSuccess)
 
     return (
-        <div className="flex flex-col justify-center items-center gap-4 m-4">
+        <div className="flex flex-col justify-center items-center gap-4 m-4" id="contact">
             <h1 className="font-bold text-center text-4xl md:text-6xl md:w-1/2">Contact</h1>
             <div className='relative flex flex-col w-full md:w-3/4'>
                 <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
