@@ -3,7 +3,7 @@ import HandWave from '../assets/HandWave.png'
 export default function Header() {
 
     return (
-        <div className='flex items-center justify-between m-4 font-bold text-lg lg:justify-around'>
+        <div className='flex items-center justify-between m-4 font-bold text-lg lg:justify-around' id='top'>
             <img src={HandWave} alt="waving hand emoji" className='size-9 object-contain' />
             <div className='flex items-center gap-4 md:text-xl'>
                 <a href='#about' className='hover:underline cursor-pointer flex-shrink-0'>About Me</a>

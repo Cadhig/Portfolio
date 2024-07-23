@@ -3,6 +3,7 @@ import AboutMain from "../components/AboutMain"
 import TechStack from "../components/TechStack"
 import ProjectsMain from "../components/ProjectsMain"
 import Contact from "../components/Contact"
+import Footer from "../components/Footer"
 function App() {
 
 
@@ -13,6 +14,7 @@ function App() {
       <TechStack />
       <ProjectsMain />
       <Contact />
+      <Footer />
     </div>
   )
 }
