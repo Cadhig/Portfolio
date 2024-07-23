@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Project } from "../data/data"
-import { X, Github, Earth } from "lucide-react"
+import { Github, Earth } from "lucide-react"
 
 interface ModalProps extends Project {
     setModal: (modal: boolean) => void,
@@ -8,18 +8,19 @@ interface ModalProps extends Project {
 }
 export default function Projects(props: Project) {
     const [modal, setModal] = useState<boolean>(false)
-    let showOrHideModal = modal ? 'inline' : 'hidden'
+    let showOrHideModal = modal ? 'inline z-50' : 'hidden'
 
     return (
-
-        <div className='relative defaultFont' onClick={() => setModal(true)}>
-            <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
-            <div className="flex flex-col p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
-                <img src={props.img} alt={props.title} className="border border-grey-custom rounded h-52 w-full object-cover" />
-                <h1>{props.title}</h1>
-            </div>
-            <div className={showOrHideModal}>
+        <div>
+            <div className={`fixed inset-0 z-50 ${showOrHideModal}`}>
                 <ProjectModal {...props} setModal={setModal} modal={modal} />
+            </div>
+            <div className='relative defaultFont z-0' onClick={() => setModal(true)}>
+                <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
+                <div className=" flex flex-col p-2 items-center text-xl bg-green-custom border border-grey-custom rounded relative text-grey-custom transition duration-150 ease-in-out hover:-translate-y-1">
+                    <img src={props.img} alt={props.title} className="border border-grey-custom rounded h-52 w-full object-cover" />
+                    <h1>{props.title}</h1>
+                </div>
             </div>
         </div>
 
@@ -29,14 +30,13 @@ export default function Projects(props: Project) {
 function ProjectModal(props: ModalProps) {
 
     return (
-        <div className="fixed left-0 top-0 size-full overflow-auto bg-grey-custom/20 flex items-center justify-center defaultFont">
-            <div className="bg-green-custom sticky rounded flex flex-col  items-center size-3/4 border border-grey-custom shadow-lg text-grey-custom defaultFont">
+        <div className="fixed left-0 top-0 bottom-0 right-0 size-full overflow-auto bg-grey-custom/20 flex items-center justify-center defaultFont" onClick={(e) => {
+            e.stopPropagation()
+            props.setModal(false)
+        }}>
+            <div className="bg-green-custom z-auto sticky rounded flex flex-col  items-center size-3/4 border border-grey-custom shadow-lg text-grey-custom defaultFont">
                 <div className="flex items-center">
                     <h1 className="text-4xl font-bold">{props.title}</h1>
-                    <X onClick={(e) => {
-                        e.stopPropagation();
-                        props.setModal(false);
-                    }} />
                 </div>
                 <div className="flex size-full">
                     <div className="flex items-center w-1/2 mx-4 justify-center">
