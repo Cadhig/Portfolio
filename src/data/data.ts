@@ -10,6 +10,7 @@ import SocialMediaApi from '../assets/SocialMediaAPI.png'
 import SocialMediaApiRoutes from '../assets/SocialMediaAPIRoutes.png'
 import Movify from '../assets/Movify.png'
 import MovifyMobile from '../assets/MovifyMobile.png'
+import WeatherApp from '../assets/WeatherApp.png'
 
 export interface Project {
     title: string,
@@ -104,5 +105,17 @@ export const projects: Project[] = [
         languages: ["JavaScript"],
         git: "https://github.com/anullator/Movie-Picker",
         deployed: "https://anullator.github.io/Movie-Picker/"
+    },
+    {
+        title: "Weather App",
+        img: WeatherApp,
+        img2: WeatherApp,
+        description: "One of my very first projects, This is a simple single-page website that utilizes the Openweather API, and local storage to store previously searched cities.",
+        feature1: "- Daily updated weather data",
+        feature2: "- Previous cities are stored and click-able.",
+        tech: ["OpenWeather API"],
+        languages: ["JavaScript"],
+        git: "https://github.com/Cadhig/WeatherApp",
+        deployed: "https://cadhig.github.io/WeatherApp/"
     },
 ]
