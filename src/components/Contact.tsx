@@ -29,7 +29,7 @@ export default function Contact() {
 
     return (
         <div className="flex flex-col justify-center items-center gap-4 m-4 defaultFont" id="contact">
-            <form onSubmit={handleSubmit(onSubmit)} className="relative text-grey-custom p-6 text-xl flex flex-col items-center justify-center gap-4 rounded border-2 border-grey-custom" >
+            <form onSubmit={handleSubmit(onSubmit)} className="relative text-grey-custom p-6 text-xl flex flex-col items-center justify-center gap-4 rounded border-2" >
                 <h1 className="font-bold text-center text-4xl md:text-6xl md:w-1/2">Contact</h1>
                 <p>Fill out the form below to send me an email, I typically respond within 3 days.</p>
                 <input type="text" placeholder="John Doe" {...register("name", { required: true })} className="w-3/4 rounded border-2 border-grey-custom p-1" />
