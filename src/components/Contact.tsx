@@ -39,6 +39,8 @@ export default function Contact() {
                     <div className="absolute inset-0 bg-grey-custom z-0 rounded" style={{ transform: 'translate(5px, 5px)' }}></div>
                     <button type="submit" className='relative bg-green-custom text-grey-custom p-2 text-2xl flex items-center justify-center gap-2 rounded border-2 border-grey-custom transition duration-150 ease-in-out hover:-translate-y-1'>Send Email<Send /></button>
                 </div>
+                <div>If you would prefer to send me an email separately:</div>
+                <a href="mailto:cadencehiggins@gmail.com" className="text-blue-600 hover:underline cursor-pointer">cadencehiggins@gmail.com</a>
                 <div>{result}</div>
             </form>
         </div>
