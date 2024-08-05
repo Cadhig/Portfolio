@@ -9,7 +9,7 @@ export default function AboutMain() {
                 <div className='flex justify-around items-center w-full md:justify-between'>
                     <div className='flex flex-col md:flex-row justify-around items-center w-full md:justify-center md:gap-6'>
                         <div className='flex flex-col md:w-1/4 gap-4' id='about'>
-                            <h1 className='font-bold text-4xl md:text-6xl md:w-1/2'>Cadence Higgins</h1>
+                            <h1 className='font-bold text-4xl md:text-5xl md:w-1/2'>Cadence Higgins</h1>
                             <p className='md:mt-4 md:text-lg'>A passionate Full-Stack Developer from Houston, Texas, dedicated to transforming my ideas into real projects! My journey encompasses web and software development, with a growing interest in AI and machine learning.</p>
                         </div>
                         <div className='relative'>
