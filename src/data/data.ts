@@ -11,6 +11,8 @@ import SocialMediaApiRoutes from '../assets/SocialMediaAPIRoutes.png'
 import Movify from '../assets/Movify.png'
 import MovifyMobile from '../assets/MovifyMobile.png'
 import WeatherApp from '../assets/WeatherApp.png'
+import BookNest from '../assets/BookNest.png'
+import BookNestMobile from '../assets/BookNestMobile.png'
 
 export interface Project {
     title: string,
@@ -29,6 +31,20 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    {
+        title: "Book Nest",
+        img: BookNest,
+        img2: BookNestMobile,
+        description: "BookNest is a platform where book lovers can connect! Users will be able to search books by author or title, create social media posts, follow other users, add books to their TBR, customize their profile, and more!",
+        feature1: "• Book Search: Searrch for your favorite titles using keywords, author name, or title",
+        feature2: "• Bookmarks: Save your favorite reads to your profile",
+        feature3: "• Connect with Others: Create posts, view / like other users posts and view others bookmarks",
+        feature4: "• Profile Customization: Customize your profile with a personalized bio, location, birthday, and profile / cover pictures.",
+        tech: ["React", "MongoDB", "AWS S3", "Node.js", "Express.js", "TailwindCSS"],
+        languages: ["TypeScript"],
+        git: "https://github.com/Cadhig/BookNest",
+        deployed: "https://booknest-frontend-production.up.railway.app/"
+    },
     {
         title: "Draw AI",
         img: DrawAI,
