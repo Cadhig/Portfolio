@@ -49,7 +49,7 @@ export const projects: Project[] = [
         title: "Draw AI",
         img: DrawAI,
         img2: DrawAIMobile,
-        description: "Interactive AI-powered digit recognition: Draw a number, and our AI will accurately predict which digit you've sketched.",
+        description: "Draw AI is an interactive AI-powered digit recognition application. Draw a number, and our AI will accurately predict which digit you've sketched.",
         feature1: "•  Interactive on-screen canvas",
         feature2: "•  Near real-time Data Transmission",
         feature3: "•  AI-powered digit recognition",
