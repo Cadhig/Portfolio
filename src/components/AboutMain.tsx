@@ -1,6 +1,5 @@
 import Cadence from '../assets/Cadence.jpg'
 import { Linkedin, FileDown, Instagram, Github, Twitter } from 'lucide-react'
-import Certificate from '../assets/Rice-certificate.pdf'
 import CadenceHigginsResume from '../assets/CadenceHigginsResume.pdf'
 export default function AboutMain() {
 
