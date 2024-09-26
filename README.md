@@ -6,6 +6,6 @@ https://www.cadencehiggins.com/
 - React
 - TypeScript
   <br>
-
-![image](https://github.com/user-attachments/assets/aa8993b2-b762-4901-85f0-7d40d8ebce1c)
+  
+![image](https://github.com/user-attachments/assets/ca8bdc47-1490-40e2-b040-50c3e964f677)
 
