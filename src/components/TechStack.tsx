@@ -27,6 +27,10 @@ export default function TechStack() {
                     <p>Node</p>
                 </div>
                 <div className="flex flex-col items-center font-bold">
+                    <StackIcon name="flask" className="w-16" />
+                    <p>Flask</p>
+                </div>
+                <div className="flex flex-col items-center font-bold">
                     <StackIcon name="postgresql" className="w-16" />
                     <p>PostgreSQL</p>
                 </div>
@@ -35,8 +39,24 @@ export default function TechStack() {
                     <p>MongoDB</p>
                 </div>
                 <div className="flex flex-col items-center font-bold">
-                    <StackIcon name="flask" className="w-16" />
-                    <p>Flask</p>
+                    <StackIcon name="aws" className="w-16" />
+                    <p>AWS</p>
+                </div>
+                <div className="flex flex-col items-center font-bold">
+                    <StackIcon name="tailwindcss" className="w-16" />
+                    <p>TailwindCSS</p>
+                </div>
+                <div className="flex flex-col items-center font-bold">
+                    <StackIcon name="semanticui" className="w-16" />
+                    <p>Semantic UI</p>
+                </div>
+                <div className="flex flex-col items-center font-bold">
+                    <StackIcon name="figma" className="w-16" />
+                    <p>Figma</p>
+                </div>
+                <div className="flex flex-col items-center font-bold">
+                    <StackIcon name="docker" className="w-16" />
+                    <p>Docker</p>
                 </div>
                 <div className="flex flex-col items-center font-bold">
                     <StackIcon name="html5" className="w-16" />
@@ -47,12 +67,8 @@ export default function TechStack() {
                     <p>CSS</p>
                 </div>
                 <div className="flex flex-col items-center font-bold">
-                    <StackIcon name="tailwindcss" className="w-16" />
-                    <p>TailwindCSS</p>
-                </div>
-                <div className="flex flex-col items-center font-bold">
-                    <StackIcon name="docker" className="w-16" />
-                    <p>Docker</p>
+                    <StackIcon name="github" className="w-16" />
+                    <p>GitHub</p>
                 </div>
             </div>
         </div>
